@@ -1,0 +1,309 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.huy</groupId>
+  <artifactId>APIClient</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>APIClient</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+   	<dependency>
+  		<groupId>com.franz</groupId>
+  		<artifactId>agraph-java-client</artifactId>
+  		<version>2.0.2</version>
+  		<scope>compile</scope>
+	</dependency>
+	
+	
+   	<dependency>
+   		<groupId>org.eclipse.rdf4j</groupId>
+   		<artifactId>rdf4j-runtime</artifactId>
+   		<version>2.0M2</version>
+   	</dependency>
+   	
+   	<dependency>
+   		<groupId>org.eclipse.rdf4j</groupId>
+   		<artifactId>rdf4j-queryparser-api</artifactId>
+   		<version>2.2.2</version>
+   	</dependency>
+   	
+   	<dependency>
+   		<groupId>org.eclipse.rdf4j</groupId>
+   		<artifactId>rdf4j-model</artifactId>
+   		<version>2.3.0</version>
+   	</dependency>
+   	
+   	<dependency>
+        <groupId>commons-httpclient</groupId>
+        <artifactId>commons-httpclient</artifactId>
+        <version>3.1</version>
+    </dependency>
+    
+    <dependency>
+  		<groupId>org.apache.httpcomponents</groupId>
+  		<artifactId>httpclient</artifactId>
+  		<version>4.5.5</version>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.jena</groupId>
+		<artifactId>apache-jena-libs</artifactId>
+		<version>3.1.1</version>
+		<type>pom</type>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.apache.logging.log4j</groupId>
+		<artifactId>log4j-core</artifactId>
+		<version>2.7</version>
+	</dependency>
+	
+	<dependency>
+  		<groupId>org.eclipse.rdf4j</groupId>
+  		<artifactId>rdf4j-repository-http</artifactId>
+  		<version>2.2.2</version>
+	</dependency>
+	
+	<dependency>
+  		<groupId>org.eclipse.rdf4j</groupId>
+  		<artifactId>rdf4j-queryresultio-sparqlxml</artifactId>
+  		<version>2.2.2</version>
+	</dependency>
+	
+	<dependency>
+  		<groupId>org.eclipse.rdf4j</groupId>
+  		<artifactId>rdf4j-queryresultio-api</artifactId>
+  		<version>2.2.2</version>
+	</dependency>
+	
+	<dependency>
+  		<groupId>org.eclipse.rdf4j</groupId>
+  		<artifactId>rdf4j-query</artifactId>
+  		<version>2.2.2</version>
+	</dependency>
+	
+	<dependency>
+  		<groupId>org.eclipse.rdf4j</groupId>
+  		<artifactId>rdf4j-model</artifactId>
+  		<version>2.2.2</version>
+	</dependency>
+	
+	
+	<dependency>
+  		<groupId>org.eclipse.rdf4j</groupId>
+  		<artifactId>rdf4j-queryparser-api</artifactId>
+  		<version>2.2.2</version>
+	</dependency>
+	
+	<dependency>
+  		<groupId>org.eclipse.rdf4j</groupId>
+  		<artifactId>rdf4j-queryresultio-sparqljson</artifactId>
+  		<version>2.2.2</version>
+	</dependency>
+	
+	
+	<dependency>
+  		<groupId>org.eclipse.rdf4j</groupId>
+  		<artifactId>rdf4j-queryresultio-text</artifactId>
+  		<version>2.2.2</version>
+	</dependency>
+	
+	<dependency>
+  		<groupId>org.eclipse.rdf4j</groupId>
+  		<artifactId>rdf4j-repository-api</artifactId>
+  		<version>2.2.2</version>
+	</dependency>
+	
+	<dependency>
+  		<groupId>org.eclipse.rdf4j</groupId>
+  		<artifactId>rdf4j-repository-sparql</artifactId>
+  		<version>2.2.2</version>
+	</dependency>
+	
+	<dependency>
+       <groupId>org.slf4j</groupId>
+       <artifactId>slf4j-api</artifactId>
+       <version>1.7.5</version>
+   </dependency>
+   
+   <dependency>
+       <groupId>org.slf4j</groupId>
+       <artifactId>slf4j-log4j12</artifactId>
+       <version>1.7.5</version>
+   </dependency>
+   
+   <dependency>
+   		<groupId>log4j</groupId>
+   		<artifactId>log4j</artifactId>
+   		<version>1.2.17</version>
+   </dependency>
+   
+   <dependency>
+   		<groupId>org.apache.httpcomponents</groupId>
+   		<artifactId>httpclient</artifactId>
+   		<version>4.5.2</version>
+   </dependency>
+   
+   <dependency>
+   		<groupId>org.apache.httpcomponents</groupId>
+   		<artifactId>httpclient-cache</artifactId>
+   		<version>4.5.2</version>
+   </dependency>
+	
+   <dependency>
+   		<groupId>com.github.andrewoma.dexx</groupId>
+   		<artifactId>collection</artifactId>
+   		<version>0.6</version>
+   </dependency>
+
+	
+	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-api</artifactId>
+		<version>1.7.25</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.eclipse.rdf4j</groupId>
+		<artifactId>rdf4j-queryresultio-sparqlxml</artifactId>
+		<version>2.3.0-M2</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.eclipse.rdf4j</groupId>
+		<artifactId>rdf4j-queryrender</artifactId>
+		<version>2.2.2</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.eclipse.rdf4j</groupId>
+		<artifactId>rdf4j-util</artifactId>
+		<version>2.3.0</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.eclipse.rdf4j</groupId>
+		<artifactId>rdf4j-queryparser-sparql</artifactId>
+		<version>2.3.0</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.eclipse.rdf4j</groupId>
+		<artifactId>rdf4j-repository-sparql</artifactId>
+		<version>2.2.2</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.eclipse.rdf4j</groupId>
+		<artifactId>rdf4j-queryparser-serql</artifactId>
+		<version>2.2.2</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.eclipse.rdf4j</groupId>
+		<artifactId>rdf4j-queryalgebra-model</artifactId>
+		<version>2.2.2</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.eclipse.rdf4j</groupId>
+		<artifactId>rdf4j-queryresultio-text</artifactId>
+		<version>2.2.2</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.eclipse.rdf4j</groupId>
+		<artifactId>rdf4j-queryresultio-binary</artifactId>
+		<version>2.2.2</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.eclipse.rdf4j</groupId>
+		<artifactId>rdf4j-queryalgebra-evaluation</artifactId>
+		<version>2.2.2</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.json</groupId>
+		<artifactId>json</artifactId>
+		<version>20160810</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.apache.commons</groupId>
+		<artifactId>commons-pool2</artifactId>
+		<version>2.4.2</version>
+	</dependency>
+		
+  </dependencies>
+ <build>
+    <plugins>
+        
+        
+        
+        <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-shade-plugin</artifactId>
+	        <version>2.3</version>
+	        <configuration>
+	          <createDependencyReducedPom>false</createDependencyReducedPom>
+	        </configuration>
+	        <executions>
+	          <execution>
+	            <phase>package</phase>
+	            <goals>
+	              <goal>shade</goal>
+	            </goals>
+	          </execution>
+	          
+	        </executions>
+     	 </plugin>
+     	 
+     	  <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
+        </configuration>
+      </plugin>
+     	 
+     	 <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.5.1</version>
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+                <encoding>utf8</encoding>
+            </configuration>
+        </plugin>
+        
+        
+    </plugins>
+</build>
+
+
+</project>
