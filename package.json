@@ -11,5 +11,8 @@
     "url": "Project II"
   },
   "author": "Quang Huy",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^2.1.0"
+  }
 }
