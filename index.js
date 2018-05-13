@@ -2,10 +2,23 @@ var express = require("express");
 var app = express();
 var bodyParser = require('body-parser');
 var java = require("java");
-//const http2 = require('http2');
+var fs = require('fs');
+/*
+var http2 = require('http2');
+
+require('express-http2-workaround')({express:express,http2:http2,app:app});
+const httpOptions = {
+    'key':fs.readFileSync(__dirname + '/keys/server.key'),
+    'cert':fs.readFileSync(__dirname + '/keys/server.crt'),
+    'ca':fs.readFileSync(__dirname + '/keys/server.crt')
+}
+
+
+
+var server = http2.createServer(httpOptions,app);
+*/
 
 var server = require('http').Server(app);
-//var server = http2.createSecureServer(app);
 
 var io = require('socket.io')(server);
 io.on('connection',function(socket){
@@ -15,9 +28,8 @@ io.on('connection',function(socket){
 });
 
 
-
 server.listen(3000,function(){
-    console.log("OK connection!");
+  console.log("OK connection!");
 });
 
 
