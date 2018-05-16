@@ -24,7 +24,7 @@ var io = require('socket.io')(server);
 io.on('connection',function(socket){
 
     console.log('Socket io');
-
+    
 });
 
 
@@ -65,7 +65,8 @@ app.post('/',urlencodedParser, function(req,res){
 
      if(req.body.automatic == "yes"){
          result = java.callStaticMethodSync("com.huy.APIClient.ClientAPI","getInstanceOfClass","owl:Class");
-        console.log("Loading Jmeter")
+        console.log("Loading Jmeter");
+        
         }
        
    // result = java.callStaticMethodSync("com.huy.APIClient.ClientAPI","getPropertyOfInstance",req.body.propertyInstance);
